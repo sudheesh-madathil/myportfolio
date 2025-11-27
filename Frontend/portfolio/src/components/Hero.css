@@ -1,0 +1,124 @@
+/* MAIN HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+/* TEXT SECTION */
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero-text h1 .highlight {
+  color: var(--primary);
+}
+
+.hero-text h2 {
+  font-size: 24px;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  max-width: 500px;
+  margin-bottom: 25px;
+  color: var(--text-muted);
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-buttons .btn {
+  transition: all 0.25s ease;
+}
+
+.hero-buttons .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 255, 180, 0.25);
+}
+
+/* ---------------------------------------------------
+   3D IMAGE ANIMATION + FLOATING + GLOW
+---------------------------------------------------- */
+.hero-image img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--primary);
+
+  /* 3D Effects */
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  /* Animations */
+  animation: float3D 5s ease-in-out infinite, glowPulse 3s ease-in-out infinite;
+
+  /* Glow */
+  box-shadow: 0 0 20px rgba(0, 255, 180, 0.3);
+}
+
+/* Hover 3D tilt */
+.hero-image img:hover {
+  transform: rotateX(12deg) rotateY(-12deg) scale(1.06);
+  box-shadow: 0 25px 45px rgba(0, 255, 180, 0.45);
+}
+
+/* FLOATING KEYFRAMES */
+@keyframes float3D {
+  0% {
+    transform: translateY(0) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-18px) rotateX(4deg) rotateY(-4deg);
+  }
+  100% {
+    transform: translateY(0) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+/* GLOW PULSE ANIMATION */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 18px rgba(0, 255, 180, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 38px rgba(0, 255, 180, 0.55);
+  }
+}
+
+/* ---------------------------------------------------
+   RESPONSIVE DESIGN
+---------------------------------------------------- */
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}

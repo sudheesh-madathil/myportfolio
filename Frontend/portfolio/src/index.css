@@ -1,0 +1,140 @@
+/* ------------------------------
+   GLOBAL RESET
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background:  #1e293b; /* Dark navy */
+  color: #e2e8f0;      /* Light gray */
+  line-height: 1.6;
+}
+
+/* --------------------------------
+   ROOT THEME COLORS (CUSTOM)
+----------------------------------- */
+:root {
+  --primary: #10b981;        /* Green */
+  --primary-dark: #059669;
+  --text-light: #e2e8f0;
+  --text-muted: #94a3b8;
+  --bg-dark: #0f172a;
+  --bg-light: #1e293b;
+  --card-bg: #1e293b;
+  --border: rgba(16, 185, 129, 0.2);
+}
+
+/* --------------------------------
+   LAYOUT WRAPPERS
+----------------------------------- */
+.section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* --------------------------------
+   TITLES
+----------------------------------- */
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: var(--text-light);
+  border-bottom: 3px solid var(--primary);
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* --------------------------------
+   BUTTONS
+----------------------------------- */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: #0f172a;
+}
+
+/* --------------------------------
+   CARDS
+----------------------------------- */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.25);
+}
+
+/* --------------------------------
+   RESPONSIVE TYPOGRAPHY
+----------------------------------- */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+/* --------------------------------
+   CUSTOM SCROLLBAR
+----------------------------------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
