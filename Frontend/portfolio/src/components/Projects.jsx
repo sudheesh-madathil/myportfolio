@@ -7,19 +7,19 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       desc: "A modern personal portfolio built with React and custom CSS.",
-      img: "../../src/assets/1234.jpg",
+      img: "/1234.jpg",
       link: "https://github.com/sudheesh-madathil",
     },
     {
       title: "EMI-calculator",
       desc: "Full-stack CRUD project using MongoDB, Express, React, Node.js.",
-      img: "../../src/assets/emi.jpg",
+      img: "/emi.jpg",
       link: "https://github.com/sudheesh-madathil",
     },
     {
       title: "E-Commerce",
       desc: "Fully responsive e-commerce interface with filtering & cart UI.",
-      img: "../../src/assets/1122.jpg",
+      img: "/1122.jpg",
       link: "https://github.com/sudheesh-madathil",
     },
 
@@ -29,19 +29,19 @@ const Projects = () => {
     {
       title: "EMPLOYEE-Management",
       desc: "A modern personal portfolio built with React and custom CSS.",
-      img: "../../src/assets/employe.jpg",
+      img: "/employe.jpg",
       link: "https://github.com/sudheesh-madathil",
     },
     {
       title: "HOTEL-Booking",
       desc: "Full-stack CRUD project using MongoDB, Express, React, Node.js.",
-      img: "../../src/assets/hotel booking.jpg",
+      img: "/hotelbooking.jpg",
       link: "https://github.com/sudheesh-madathil",
     },
     {
       title: "JOB-Portal",
       desc: "Fully responsive e-commerce interface with filtering & cart UI.",
-      img: "../../src/assets/job-11.jpg",
+      img: "/job-11.jpg",
       link: "https://github.com/sudheesh-madathil",
     },
 
